@@ -1,0 +1,27 @@
+body{background: linear-gradient(180deg,#071122 0%, #0f1724 100%);color:#e6eef8;display:flex;align-items:center;justify-content:center;padding:28px}
+.page{width:100%;max-width:900px}
+.hero{text-align:center;margin-bottom:18px}
+.hero h1{font-size:40px;margin:0 0 8px}
+.tag{color:var(--muted);margin:0}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.7)}
+.instructions{padding:12px;margin-bottom:8px}
+.instructions ol{color:var(--muted);margin-left:18px}
+.btn{padding:10px 14px;border-radius:10px;border:0;background:transparent;color:inherit;cursor:pointer}
+.btn.primary{background:linear-gradient(90deg,var(--accent),#5aa0ff);color:#001; font-weight:600}
+.btn.ghost{border:1px solid rgba(255,255,255,0.06);}
+.hidden{display:none}
+.form{display:flex;flex-direction:column;gap:10px}
+.label{display:flex;flex-direction:column;color:var(--muted);font-size:14px}
+input, textarea{background:var(--glass);border:1px solid rgba(255,255,255,0.03);padding:10px;border-radius:8px;color:inherit;font-size:15px}
+textarea{resize:vertical}
+.switch{display:flex;align-items:center;gap:10px}
+.switch input{display:none}
+.switch-slider{width:40px;height:22px;background:rgba(255,255,255,0.06);border-radius:999px;position:relative}
+.switch-slider:after{content:'';position:absolute;left:3px;top:3px;width:16px;height:16px;background:white;border-radius:50%;transition:transform 0.2s}
+.switch input:checked + .switch-slider{background:linear-gradient(90deg,var(--accent),#5aa0ff)}
+.switch input:checked + .switch-slider:after{transform:translateX(18px)}
+.actions{display:flex;gap:10px;justify-content:flex-end;margin-top:6px}
+.status{margin-top:8px;color:var(--muted)}
+.preview-box{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);white-space:pre-wrap}
+.foot{text-align:center;margin-top:12px;color:var(--muted);font-size:13px}
+@media (max-width:600px){.hero h1{font-size:30px}}
