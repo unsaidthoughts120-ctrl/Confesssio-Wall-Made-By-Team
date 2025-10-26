@@ -1,0 +1,71 @@
+<!doctype html>
+<body>
+<main class="page">
+<header class="hero">
+<h1>Confess</h1>
+<p class="tag">Send a sweet confession — anonymously or not — we’ll forward it to the page admins.</p>
+</header>
+
+
+<section class="card">
+<div id="instructions" class="instructions">
+<h2>How it works</h2>
+<ol>
+<li>Write your message. Keep it respectful.</li>
+<li>Choose whether to show your name.</li>
+<li>Preview it and send. We forward it to a private Telegram chat.</li>
+</ol>
+<button id="startBtn" class="btn">Start typing</button>
+</div>
+
+
+<form id="confessForm" class="form hidden" autocomplete="off">
+<label class="label">Receiver (optional)
+<input id="receiver" name="receiver" placeholder="Their name or @handle">
+</label>
+
+
+<label class="label">Your name (optional)
+<input id="sender" name="sender" placeholder="Your name or leave blank for anonymous">
+</label>
+
+
+<label class="label switch">Send anonymously
+<input id="anonymous" type="checkbox" checked>
+<span class="switch-slider"></span>
+</label>
+
+
+<label class="label">Message
+<textarea id="message" name="message" rows="6" maxlength="1000" placeholder="Type your confession... Be kind."></textarea>
+</label>
+
+
+<div class="actions">
+<button type="button" id="previewBtn" class="btn ghost">Preview</button>
+<button type="submit" class="btn primary">Send confession</button>
+</div>
+
+
+<p id="status" class="status"></p>
+</form>
+
+
+<div id="preview" class="preview hidden">
+<h3>Preview</h3>
+<div id="previewBox" class="preview-box"></div>
+<div class="actions">
+<button id="editBtn" class="btn ghost">Edit</button>
+<button id="sendFromPreview" class="btn primary">Send</button>
+</div>
+</div>
+</section>
+
+
+<footer class="foot">Hosted on Vercel • Confessions forwarded to page admins</footer>
+</main>
+
+
+<script src="/script.js"></script>
+</body>
+</html>
